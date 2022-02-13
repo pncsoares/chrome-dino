@@ -2,7 +2,7 @@ import {
     getCustomProperty,
     incrementCustomProperty,
     setCustomProperty 
-} from "./updateCustomProperty.js";
+} from "./UpdateCustomProperty.js";
 
 const SPEED = .05;
 const groundElems = document.querySelectorAll('[data-ground]');

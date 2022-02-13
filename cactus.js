@@ -2,7 +2,7 @@ import {
     setCustomProperty,
     incrementCustomProperty,
     getCustomProperty
-} from "./updateCustomProperty.js";
+} from "./UpdateCustomProperty.js";
 
 const SPEED = .05;
 const CACTUS_INTERVAL_MIN = 500;
