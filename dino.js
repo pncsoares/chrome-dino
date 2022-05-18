@@ -2,7 +2,7 @@ import {
     incrementCustomProperty,
     getCustomProperty,
     setCustomProperty
-} from "./UpdateCustomProperty.js";
+} from "./updateCustomProperty.js";
 
 const JUMP_SPEED = .45;
 const GRAVITY = .0015;
