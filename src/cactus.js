@@ -46,7 +46,7 @@ export function getCactusRects() {
 function createCactus() {
     const cactus = document.createElement("img");
     cactus.dataset.cactus = true;
-    cactus.src = "assets/images/cactus.png";
+    cactus.src = "../assets/images/cactus.png";
     cactus.classList.add("cactus");
 
     setCustomProperty(cactus, "--left", 100);
