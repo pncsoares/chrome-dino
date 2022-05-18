@@ -1,18 +1,6 @@
-import { 
-    setupGround, 
-    updateGround 
-} from './ground.js';
-import {
-    setupDino,
-    updateDino,
-    getDinoRects,
-    setDinoLose
-} from './dino.js';
-import {
-    setupCactus,
-    updateCactus,
-    getCactusRects
-} from './cactus.js';
+import { setupGround, updateGround } from './ground.js';
+import { setupDino, updateDino, getDinoRects, setDinoLose } from './dino.js';
+import { setupCactus, updateCactus, getCactusRects } from './cactus.js';
 
 const WORLD_WIDTH = 100;
 const WORLD_HEIGHT = 30;
@@ -23,8 +11,8 @@ const scoreElem = document.querySelector('[data-score]');
 const startScreenElem = document.querySelector('[data-start-screen]');
 
 setPixelToWorldScale();
-window.addEventListener("resize", setPixelToWorldScale);
-document.addEventListener("keydown", handleStart, { once: true });
+window.addEventListener('resize', setPixelToWorldScale);
+document.addEventListener('keydown', handleStart, { once: true });
 
 let lastTime;
 let speedScale;
@@ -56,7 +44,7 @@ function checkLose() {
     const dinoRect = getDinoRects();
     const cactusRect = getCactusRects();
 
-    return cactusRect.some(rect => isCollision(rect, dinoRect));
+    return cactusRect.some((rect) => isCollision(rect, dinoRect));
 }
 
 function isCollision(rect1, rect2) {
@@ -86,7 +74,7 @@ function handleStart() {
     setupDino();
     setupCactus();
 
-    startScreenElem.classList.add("hide");
+    startScreenElem.classList.add('hide');
 
     window.requestAnimationFrame(update);
 }
@@ -95,8 +83,8 @@ function handleLose() {
     setDinoLose();
 
     setTimeout(() => {
-        document.addEventListener("keydown", handleStart, { once: true });
-        startScreenElem.classList.remove("hide");
+        document.addEventListener('keydown', handleStart, { once: true });
+        startScreenElem.classList.remove('hide');
     }, 100);
 }
 
@@ -107,7 +95,7 @@ function setPixelToWorldScale() {
         worldToPixelScale = window.innerWidth / WORLD_WIDTH;
     } else {
         worldToPixelScale = window.innerHeight / WORLD_HEIGHT;
-    } 
+    }
 
     worldElem.style.width = `${WORLD_WIDTH * worldToPixelScale}px`;
     worldElem.style.height = `${WORLD_HEIGHT * worldToPixelScale}px`;
