@@ -1,6 +1,12 @@
 # Chrome Dino
 
-A clone of the Google Chrome's Dinosaur game.
+A clone of the Google Chrome's Dinosaur game 🦕
+
+![app](./.github/app.png)
+
+# How to play
+
+Press any key to start and then `space` to jump.
 
 # Setup
 
