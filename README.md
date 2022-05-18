@@ -6,7 +6,8 @@ A clone of the Google Chrome's Dinosaur game 🦕
 
 # How to play
 
-Press any key to start and then `space` to jump.
+1. Open the following URL: https://pncsoares.github.io/chrome-dino/src
+1. Press any key to start and then `space` to jump.
 
 # Setup
 
